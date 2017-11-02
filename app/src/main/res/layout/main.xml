@@ -27,6 +27,7 @@
     
     <EditText
         android:id="@+id/body"
+        android:labelFor="@id/body"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:scrollbars="horizontal" />
@@ -46,3 +47,9 @@
         android:onClick="save" />
 
 </LinearLayout>
+
+<!--
+1. fix in EditText
+    add     android:labelFor="@id/body"
+    Reason: label for the view for accessibility purpose
+-->
