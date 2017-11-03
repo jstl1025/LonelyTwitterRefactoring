@@ -13,7 +13,8 @@ abstract class LonelyTweet implements Serializable {
     protected Date tweetDate;
     protected String tweetBody;
 
-    public Date getTweetDate() {
+    /*fixed here, change public to private*/
+    private Date getTweetDate() {
         return tweetDate;
     }
 

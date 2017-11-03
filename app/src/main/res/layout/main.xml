@@ -8,7 +8,7 @@
         android:id="@+id/oldTweetsTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="My old tweets" />
+        android:text="@string/my_old_tweets" />
 
     <ListView
         android:id="@+id/oldTweetsList"
@@ -24,7 +24,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/hello" />
-    
+
     <EditText
         android:id="@+id/body"
         android:labelFor="@id/body"
@@ -47,9 +47,3 @@
         android:onClick="save" />
 
 </LinearLayout>
-
-<!--
-1. fix in EditText
-    add     android:labelFor="@id/body"
-    Reason: label for the view for accessibility purpose
--->

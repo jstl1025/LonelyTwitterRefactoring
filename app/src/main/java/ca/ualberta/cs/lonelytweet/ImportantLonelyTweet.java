@@ -12,14 +12,15 @@ public class ImportantLonelyTweet extends LonelyTweet {
 		this.tweetBody = text;
 	}
 
+	/*fixed here, get rid of redundant if statement*/
 	@Override
 	public boolean isValid() {
-		if (tweetBody.trim().length() == 0
+		/*if (tweetBody.trim().length() == 0
 				|| tweetBody.trim().length() > 20) {
 			return false;
-		}
+		}*/
 
-		return true;
+		return tweetBody.trim().length()>0 || tweetBody.trim().length()<=20;
 	}
 
 	@Override
