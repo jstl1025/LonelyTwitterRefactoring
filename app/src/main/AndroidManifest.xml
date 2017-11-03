@@ -22,3 +22,6 @@
     </application>
 
 </manifest>
+
+    <!--4. add android:allowBackup="true" in AndroidManifest.xml
+        reason: for application security-->

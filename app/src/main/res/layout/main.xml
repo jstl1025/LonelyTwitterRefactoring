@@ -47,3 +47,12 @@
         android:onClick="save" />
 
 </LinearLayout>
+
+    <!--
+    1. fix in EditText
+        add     android:labelFor="@id/body"
+        Reason: label for the view for accessibility purpose
+    2. fix hard coded string : My old tweets
+        add to string.xml <string name="my_old_tweets">My old tweets</string>
+        Reason: for easier update
+    -->

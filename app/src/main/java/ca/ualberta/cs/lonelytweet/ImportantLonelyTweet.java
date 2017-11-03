@@ -12,7 +12,11 @@ public class ImportantLonelyTweet extends LonelyTweet {
 		this.tweetBody = text;
 	}
 
-	/*fixed here, get rid of redundant if statement*/
+	/*
+	5. fix Control flow issue in ImportantLonelyTweet class
+	reason: the if statement is redundant in isValid method,
+	so the change simplify the if statement.
+	*/
 	@Override
 	public boolean isValid() {
 		/*if (tweetBody.trim().length() == 0

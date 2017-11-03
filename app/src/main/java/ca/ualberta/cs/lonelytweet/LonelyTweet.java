@@ -13,7 +13,10 @@ abstract class LonelyTweet implements Serializable {
     protected Date tweetDate;
     protected String tweetBody;
 
-    /*fixed here, change public to private*/
+    /*3. fix declaration redundancy
+	change public Date getTweetDate() to private
+	Reason: since tweetDate is protected, its get method shouldn't be public
+    */
     private Date getTweetDate() {
         return tweetDate;
     }
